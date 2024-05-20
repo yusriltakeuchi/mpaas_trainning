@@ -1,0 +1,19 @@
+<view style="background-color: white">
+  <home-section a:if="{{ current == 0 }}" y="20"></home-section>
+  <favorite-section a:if="{{ current == 1 }}"></favorite-section>
+  <account-section a:if="{{ current == 2 }}"></account-section>
+</view>
+<view>
+  <tab-bar
+    class="tabbar"
+    items="{{ tabs }}"
+    current="{{ current }}"
+    onChange="handleChange" />
+</view>
+<view>
+  <ant-icon
+    a:if="{{ current == 0 }}"
+    type="AddCircleOutline"
+    onTap="onClickAdd"
+    className="add" />
+</view>

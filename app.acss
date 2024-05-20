@@ -1,0 +1,47 @@
+page {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #f7f7f7;
+}
+
+.pd-03 {
+  padding: 3px;
+}
+
+.pd-1 {
+  padding: 10px;
+}
+
+.pd-2 {
+  padding: 20px;
+}
+
+.primary-field {
+  background-color: #f3f3f3; 
+  border-radius: 8px; 
+  color: #f3f3f3;
+  padding: 10px; /* Padding for better text visibility */
+  font-size: 16px; /* Font size for better readability */
+  outline: none; /* Remove default outline on focus */
+  width: 95%;
+}
+
+.primary-input input,
+.primary-input textarea {
+  background-color: #f3f3f3; 
+  border-radius: 8px; 
+  padding: 10px; 
+  font-size: 16px; /* Font size for better readability */
+}
+
+.primarybutton {
+  border-radius: 15px;
+  width: 100%;
+  color: white;
+}
+
+.form-right {
+  display: flex;
+  justify-content: right;
+  flex-direction: row; /* Mengatur konten ke dalam baris */
+  align-items: center; /* Memposisikan konten secara vertikal */
+}

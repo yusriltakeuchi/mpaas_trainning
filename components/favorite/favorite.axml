@@ -1,0 +1,25 @@
+<view>
+  <ant-empty
+    a:if="{{ favoriteTask.length == 0 }}"
+    title="Favorit Anda kosong"
+    message="Ayo tambahkan satu todo kesukaanmu" />
+  <ant-list 
+    radius=false>
+    <view a:for="{{ favoriteTask }}" a:for-index="index">
+      <ant-list-item
+        image="EditSOutline"
+        brief={{item.time}}
+        data-index={{index}}
+        data-item={{item}}
+        arrow="right">
+        {{item.title}}
+        <ant-icon
+          slot="extra"
+          type="HeartFill"
+          data-id={{item.id}}
+          onTap="removeFavorite"
+          style="font-size: 20px; color: red" />
+      </ant-list-item>
+    </view>
+  </ant-list>
+</view>

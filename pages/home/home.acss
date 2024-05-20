@@ -1,0 +1,20 @@
+page {
+  background-color: white;
+}
+.tabbar {
+  position: fixed;
+  bottom: 0; /* Tetapkan ke bagian bawah layar */
+  left: 0; /* Atur ke kiri */
+  right: 0;
+  width: 100%; /* Gunakan lebar penuh */
+  background-color: white; /* Warna latar belakang tabbar */
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.add {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  font-size: 55px; 
+  color: #3578F6;
+}

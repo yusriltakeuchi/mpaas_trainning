@@ -1,0 +1,32 @@
+
+<view>
+  <ant-list 
+    radius=false>
+    <view a:for="{{ myApp.task }}" a:for-index="index">
+      <ant-list-item
+        image="{{ item.favorite ? 'HeartFill' : 'EditSOutline' }}"
+        brief={{item.time}}
+        onTap="handleTap"
+        data-index={{index}}
+        data-item={{item}}
+        showDivider=true
+        arrow="right">
+        {{item.title}}
+        <ant-tag
+          slot="extra"
+          icon="{{item.status == 'Complete' ? 'CheckCircleOutline' : 'ClockCircleOutline'}}"
+          style="border-radius: 5px; padding: 5px"
+          color="{{item.status == 'On Progress' ? 'primary' : 'success'}}">
+          {{item.status}}
+        </ant-tag>
+      </ant-list-item>
+    </view>
+  </ant-list>
+</view>
+<ant-action-sheet
+  cancelText="Batal"
+  title={{ selectedItem.title }}
+  visible="{{ showSheet }}"
+  actions="{{ selectedItem.status == 'On Progress' ? actionSheet : actionSheetDone }}"
+  onAction="onClickSheet"
+  onClose="onCloseSheet" />

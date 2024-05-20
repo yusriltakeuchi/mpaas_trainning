@@ -1,0 +1,26 @@
+<form onSubmit="createTodoSubmit">
+  <view class="title-form">
+    Activity
+  </view>
+  <ant-input className="primary-input" placeholder="Tell your activity" name="activity" />
+
+  <ant-list-item style="padding: 0px">
+    Waktu
+    <ant-date-picker
+      slot="extra"
+      precision="minute"
+      format="HH:mm"
+      placeholder="00:00"
+      cancelText="Batal"
+      okText="OK"
+      title="Waktu Aktifitas"
+      onFormatLabel="{{ handleFormatLabel ? handleFormatLabel : 'handleFormatLabel' }}"
+      onOk="handleOk"  />
+  </ant-list-item>
+  
+  <view class="pd-1"></view>
+  <ant-loading a:if="{{ isLoading }}" color="#1677ff" type="spin" size="large" style="dislay: flex; align-items: center; justify-content: center; width: 100%" />
+  <ant-button a:if="{{ isLoading == false }}" type="primary" form-type="submit">Simpan Todo</ant-button>
+  <view class="pd-2"></view>
+  <view class="pd-2"></view>
+</form>

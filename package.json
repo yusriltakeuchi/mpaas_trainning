@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "antd-mini": "^2.31.0",
+    "dayjs": "^1.11.11"
+  }
+}

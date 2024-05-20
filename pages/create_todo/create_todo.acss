@@ -1,0 +1,18 @@
+page {
+  padding: 20px;
+}
+
+.title-form {
+  font-size: 18px;
+  color: black;
+  padding-bottom: 10px;
+}
+
+.input {
+  border: 3px solid red;
+  padding: 4px;
+  min-height: 25px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}

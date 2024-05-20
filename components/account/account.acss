@@ -1,0 +1,52 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 30vh; /* Optional: Adjust this to fit your layout */
+}
+.avatar {
+  background-color: gray;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+}
+
+.blue-cover {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 0;
+  height: 50%;
+  background-color: #3578F6 /* Blue color with transparency */
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-content: center;
+  grid-row-gap: 50px;
+  grid-column-gap: 70px;
+  padding: 10px;
+}
+
+#item {
+  text-align: center;
+  justify-content: center;
+}
+
+.header-title {
+  font-weight: 500;
+  font-size: 14px;
+  color: gray;
+}
+
+.header-value {
+  font-size: 17px;
+  padding-bottom: 5px;
+}

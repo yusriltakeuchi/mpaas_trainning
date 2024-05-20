@@ -1,0 +1,60 @@
+<view class="image-container">
+  <view class="blue-cover"></view>
+  <image 
+    mode="center"
+    src="https://images.unsplash.com/photo-1548532928-b34e3be62fc6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=150&w=150&ixid=eyJhcHBfaWQiOjE3Nzg0fQ" 
+    alt="Description of Image" 
+    class="avatar"></image>
+</view>
+
+<view class="content">
+  <view class="text-view" style="align-content: center; justify-content: center; display: flex">
+    <text style="font-size: 18px;font-weight:500">Yusril Rapsanjani</text>
+  </view>
+  <view class="pd-03"></view>
+  <view class="text-view" style="align-content: center; justify-content: center; display: flex">
+    <text style="font-size: 12px; color: gray">Mobile Developer</text>
+  </view>
+  
+  <view class="pd-1"></view>
+  <view class="header">
+    <view id="item" class="items1">
+      <view class='header-value'>10</view>
+      <view class='header-title'>Todo</view>
+    </view>
+    <view id="item" class="items2">
+      <view class='header-value'>15</view>
+      <view class='header-title'>Followers</view>
+    </view>
+  </view>
+</view>
+
+<view class="pd-2"></view>
+<ant-list
+    header=""
+    radius="false">
+    <ant-list-item
+      image="UserSetOutline"
+      arrow="right"
+      style="font-size: 20px"
+      onTap="clickMenu"
+      data-info="Edit Profile">
+      <text style="font-size: 16px;">Edit Profile</text>
+    </ant-list-item>
+    <ant-list-item
+      image="SetOutline"
+      arrow="right"
+      style="font-size: 20px"
+      catchTap="clickMenu"
+      data-info="Setting">
+      <text style="font-size: 16px;">Setting</text>
+    </ant-list-item>
+    <ant-list-item
+      image="CloseCircleOutline"
+      arrow="right"
+      style="font-size: 20px"
+      onTap="clickMenu"
+      data-info="Logout">
+      <text style="font-size: 16px;">Logout</text>
+    </ant-list-item>
+  </ant-list>

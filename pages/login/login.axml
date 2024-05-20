@@ -1,0 +1,43 @@
+<!-- 
+<view onTap="handleTap">
+  This is a webpage create by {{name}}
+</view>
+<view class="box"></view>
+<import src="./employee.axml" />
+<template is="employee" data="{{ employees: employees, company: 'Yusril Corp' }}"></template>
+
+<view class="box"></view>
+<view a:if="{{ age >= 17}}">Anda sudah cukup umur</view>
+<view a:else>Belum cukup umur</view>
+<view class="box"></view>
+
+<button onTap="updateName" size="default" type="primary">Update Name</button> -->
+
+<view class="content">
+  <image style="width: 150px; height: 150px" mode="aspectFit" src="../assets/logo.png" />
+  <view class="pd-1"></view>
+
+  <view style="font-weight: bold; font-size: 20px; text-align: center">Todo Apps</view>
+  <view class="pd-1"></view>
+  <view style="text-align: center">Please Sign In to use application {{myApp.favCount}}</view>
+  <view class="pd-2"></view>
+
+  <form onSubmit="formLoginSubmit">
+    <ant-input className="primary-input" placeholder="Email Address" name="email" />
+    <view class="pd-1"></view>
+    <ant-input className="primary-input" placeholder="Password" name="password" password=true />
+
+    <view class="pd-1"></view>
+    <view class="form-right">
+      <label style="font-size: 15px">
+        <ant-checkbox onChange="toggleRemember" defaultChecked="{{ remember }}">Remember me</ant-checkbox>
+      </label>
+    </view>
+    <view class="pd-1"></view>
+    
+    <ant-loading a:if="{{ isLoading }}" color="#1677ff" type="spin" size="large" style="dislay: flex; align-items: center; justify-content: center; width: 100%" />
+    <ant-button a:if="{{ isLoading == false }}" type="primary" form-type="submit">Sign In</ant-button>
+    <view class="pd-2"></view>
+    <view class="pd-2"></view>
+  </form>
+</view>  
